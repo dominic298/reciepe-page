@@ -23,6 +23,7 @@ body,html{
     font-size: 1rem;
     background-color: #F3E5D7;
     font-family: 'outfit';
+    position: relative;
 }
 
 
@@ -192,6 +193,10 @@ table tbody > tr > td:nth-child(2){
     font-weight: bold !important;
 }
 
+.attribution{
+  position: absolute;
+  bottom: 10px;
+}
 
 /* Media Quries */
 
