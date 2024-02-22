@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'outfit';
+    src: url('./fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'young-sheriff';
+    src: url('./fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    font-size: 1rem;
+    background-color: #F3E5D7;
+    font-family: 'outfit';
+}
+
+
+.card-container{
+  width: 931px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top:10%;
+  margin-bottom: 10%;
+}
+
+.header-image{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.title-text{
+    margin: 1rem 0;
+}
+
+.title{
+    color:  hsl(24, 5%, 18%);
+    font-family: 'young-sheriff';
+    font-size: 3em;
+}
+
+.title-description {
+    color: hsl(30, 10%, 34%);
+    margin-top:1rem;
+    font-size: 1em;
+}
+
+/* PREPARAION */
+
+.preparation-time{
+    margin: 2rem 0;
+    background-color: hsl(330, 100%, 98%); 
+    padding: 2rem;
+}
+
+.preparation-time p {
+    color: hsl(332, 51%, 32%);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.preparation-time ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.preparation-time ul > li {
+  margin-left: 1rem;
+}
+
+.preparation-time ul > li > span{
+   font-weight: 600;
+   color: hsl(24, 5%, 18%);
+   font-size: 1.1em;
+   font-weight: 700;;
+   margin-left: 2rem;
+}
+
+/* INGREDIENTS */
+
+.ingredients{
+    margin: 1rem 0;
+}
+
+.ingredients p {
+    color: #854632;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'young-sheriff';
+}
+
+.ingredients ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.ingredients ul > li {
+    margin: 1rem;
+}
+
+.ingredients ul > li span {
+  margin-left: 2rem;
+}
+
+/* INSTRUCTIONS */
+
+.instructions {
+    margin: 2rem 0 1rem 0;
+    border-top: 1px solid #E3DDD7;
+}
+
+.instructions p {
+    color: #854632;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'young-sheriff';
+    margin-top: 3rem;
+}
+
+.instructions ol {
+    list-style: none;
+    counter-reset: counter-function;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+.instructions ol > li {
+  counter-increment: counter-function;
+  margin: 1rem;
+  display: flex;
+  align-items: start; /* adjust as needed */
+}
+
+.instructions ol > li::before {
+  content: counter(counter-function);
+  /* background: red; */
+  flex: 0 0 2rem;
+  height: 2rem;
+  /* border-radius: 50%; */
+  line-height: 2rem;
+  color: black;
+  text-align: center;
+  margin-right: 1rem; /* adjust as needed */
+}
+
+.instructions ol > li .heading {
+    font-weight: 700;
+    color: hsl(24, 5%, 18%);
+    display: inline;
+}
+
+/* NUTRITION */
+
+.nutrition {
+    margin: 1rem 0;
+    border-top: 1px solid #E3DDD7;
+}
+
+.nutrition p {
+    color: #854632;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'young-sheriff';
+    margin-top: 1rem;
+}
+
+.nutrition .description {
+    font-size: 1em;
+    color:hsl(24, 5%, 18%);
+    font-family: 'outfit';
+}
+
+table {
+    margin-left: 1rem;
+ }
+
+table tbody > tr > td:nth-child(2){
+    color: hsl(14, 45%, 36%) !important;
+    font-weight: bold !important;
+}
+
+
+/* Media Quries */
+
+/* Tablet 425px */
+
+@media (max-width: 490px){
+    .card-container{
+        width: 100%;
+        border-radius: 0;
+        padding: 0;       
+        margin: 0;
+    }
+    .header-image{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+   }
+   .content{
+    padding: 1rem;
+   }
+}
+
+/* Mobile 768px */
+
+@media (min-width:500px) and (max-width:900px){
+    .card-container{
+       width: 650px;
+
+    }
+}
+
